@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 # Подключение к базе данных/создание базы данных
 # SQLALCHEMY_DATABASE_URL = 'sqlite:///data.db'
 ### postgres: logi, 1234: password ###
-SQLALCHEMY_DATABASE_URL = 'postgresql://postgres:1234@localhost/imells'
+SQLALCHEMY_DATABASE_URL = 'postgresql://imells_user:daulet2005@localhost/imells'
 # Создание движка бд
 engine = create_engine(SQLALCHEMY_DATABASE_URL, pool_size=20, max_overflow=10)
 # Переменная для создания сессий
