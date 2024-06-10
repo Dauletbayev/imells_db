@@ -5,7 +5,7 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 ### postgres: logi, 1234: password ###
 SQLALCHEMY_DATABASE_URL = 'postgresql://imells_user:daulet2005@localhost/imells'
 # Создание движка бд
-engine = create_engine(SQLALCHEMY_DATABASE_URL, pool_size=20, max_overflow=10)
+engine = create_engine(SQLALCHEMY_DATABASE_URL)
 # Переменная для создания сессий
 SessionLocal = sessionmaker(bind=engine)
 # Создание шаблона для базы классов бд
