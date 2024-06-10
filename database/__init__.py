@@ -2,8 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 # Подключение к базе данных/создание базы данных
 # SQLALCHEMY_DATABASE_URL = 'sqlite:///data.db'
-### postgres: logi, 1234: password ###
-SQLALCHEMY_DATABASE_URL = 'postgresql://imells_user:daulet2005@localhost/imells'
+SQLALCHEMY_DATABASE_URL = 'postgresql://imells_user:daulet2005@172.16.169.21:5432/imells_db'
 # Создание движка бд
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 # Переменная для создания сессий
